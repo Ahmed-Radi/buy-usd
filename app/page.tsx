@@ -75,6 +75,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center gap-5 px-2 py-24 sm:p-24">
       <div>BUY YOUR USD</div>
       <div className="flex flex-col gap-3 w-[98%] sm:w-fit">
+        <div>
+          <span className="text-red-500">*</span> <span>Minimum amount that can be changed is 100 EGP.</span>
+        </div>
         <div className="flex flex-col gap-3 sm:flex-row">
           <label htmlFor="egy">EGY:</label>
           <input
@@ -90,6 +93,9 @@ export default function Home() {
           <p>Total in EGY: {totalEgy.toFixed(2)}</p>
         </div>
         <span>{errors.egy?.message}</span>
+        <div>
+          <span className="text-red-500">*</span> <span>Minimum amount that can be changed is 1.9 USD.</span>
+        </div>
         <div className="flex flex-col gap-3 sm:flex-row">
           <label htmlFor="usd">USD:</label>
           <input
