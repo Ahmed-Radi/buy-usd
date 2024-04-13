@@ -34,7 +34,7 @@ export default function Home() {
   }, [egy])
 
   useEffect(() => {
-    const result: number = usd * 50.5
+    const result: number = usd * 51.5
     const addPercentage: number = result + (result * 0.1)
     const totalUSD: number = addPercentage
     setTotalUsd(totalUSD)
