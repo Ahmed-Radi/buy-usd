@@ -29,12 +29,12 @@ export default function Home() {
   useEffect(() => {
     const result: number = egy / 45
     const addPercentage: number = result + (result * 0.1)
-    const totalEGP: number = addPercentage * 50.5
+    const totalEGP: number = addPercentage * 52
     setTotalEgy(totalEGP)
   }, [egy])
 
   useEffect(() => {
-    const result: number = usd * 51.5
+    const result: number = usd * 52
     const addPercentage: number = result + (result * 0.1)
     const totalUSD: number = addPercentage
     setTotalUsd(totalUSD)
