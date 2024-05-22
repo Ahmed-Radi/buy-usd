@@ -27,7 +27,7 @@ export default function Home() {
   const usd = watch("usd")
 
   useEffect(() => {
-    const result: number = egy / 45
+    const result: number = egy / 46
     const addPercentage: number = result + (result * 0.1)
     const totalEGP: number = addPercentage * 49
     setTotalEgy(totalEGP)
